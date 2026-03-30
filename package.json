@@ -1,0 +1,42 @@
+{
+  "name": "appfabrik-app-base",
+  "version": "1.0.0",
+  "description": "AppFabrik White-Label React Native/Expo Template",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "build:preview": "eas build --profile preview --platform android",
+    "build:production": "eas build --profile production --platform all",
+    "setup:tenant": "./scripts/setup-tenant.sh",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nozbe/watermelondb": "^0.27.1",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/netinfo": "11.4.1",
+    "axios": "^1.7.0",
+    "expo": "~54.0.33",
+    "expo-router": "~4.0.0",
+    "expo-secure-store": "~14.0.1",
+    "expo-updates": "~0.26.0",
+    "zod": "^3.23.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "~18.3.0",
+    "typescript": "~5.7.0"
+  },
+  "keywords": [
+    "appfabrik",
+    "expo",
+    "react-native",
+    "white-label",
+    "field-service",
+    "offline-first"
+  ],
+  "author": "AppFabrik / FELDWERK",
+  "license": "UNLICENSED"
+}

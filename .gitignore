@@ -1,0 +1,11 @@
+node_modules/
+.expo/
+dist/
+.env
+.env.local
+.env.*.local
+*.log
+ios/
+android/
+google-services-key.json
+GoogleService-Info.plist
