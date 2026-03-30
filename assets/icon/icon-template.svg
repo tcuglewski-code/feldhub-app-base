@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Feldhub App Icon Template (1024x1024)
+  
+  USAGE:
+  1. Replace LOGO_PLACEHOLDER with client logo
+  2. Update BRAND_COLOR to tenant primaryColor
+  3. Export as PNG 1024x1024 (no transparency for iOS)
+  4. Generate adaptive-icon with transparency for Android
+  
+  SAFE ZONE: Center 672x672 (66% for Android adaptive)
+-->
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Brand Color Gradient (customize per tenant) -->
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D5A27;stop-opacity:1" /> <!-- Feldhub Green Dark -->
+      <stop offset="100%" style="stop-color:#4A7C59;stop-opacity:1" /> <!-- Feldhub Green Light -->
+    </linearGradient>
+    
+    <!-- Safe Zone Mask for Android Adaptive -->
+    <clipPath id="safeZone">
+      <circle cx="512" cy="512" r="336"/> <!-- 672/2 = 336 radius -->
+    </clipPath>
+  </defs>
+  
+  <!-- Background (full 1024x1024) -->
+  <rect width="1024" height="1024" fill="url(#brandGradient)"/>
+  
+  <!-- Safe Zone Guide (remove in final export) -->
+  <circle cx="512" cy="512" r="336" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="10,10" opacity="0.3"/>
+  
+  <!-- Logo Placeholder (replace with actual logo) -->
+  <g id="logo" transform="translate(512, 512)">
+    <!-- Example: Abstract leaf/field icon -->
+    <path d="M0,-200 C100,-150 150,-50 100,100 C50,150 -50,150 -100,100 C-150,-50 -100,-150 0,-200" 
+          fill="#ffffff" opacity="0.95"/>
+    <path d="M0,-100 L50,50 L0,100 L-50,50 Z" 
+          fill="url(#brandGradient)" opacity="0.8"/>
+  </g>
+  
+  <!-- Guidelines Text (remove in final) -->
+  <text x="512" y="980" text-anchor="middle" font-family="Arial" font-size="24" fill="#ffffff" opacity="0.5">
+    Replace logo • Export 1024x1024 PNG
+  </text>
+</svg>
